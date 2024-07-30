@@ -37,7 +37,7 @@ local term = {
 }
 
 for index, value in ipairs(term) do
-    vim.g["terminal_color_" .. index - 1] = value.hex()
+    vim.g["terminal_color_" .. index - 1] = value.hex
 end
 
 if vim.opt.background:get() == "dark" then
